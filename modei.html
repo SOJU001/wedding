@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
+        <title>លិខិតអញ្ជើញមង្គលអាពាហ៍ពិពាហ៍</title>
+        <style>
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .map-address {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .map-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .memory-photo1 {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .memory-photo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .memory-photo:hover {
+            transform: scale(2.05);
+        }
+        .hero-section1 {
+            background-image: url(_next/background.jpg); /* You can replace with your image URL */
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .background-couple {
+            background-image: url(_next/couple-background1.jpg);
+            background-position: 55% 50%;
+            filter: blur(2px);
+        }
+        .map-section {
+            color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+        <style>
+        .elementor-social-icons-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        .elementor-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .elementor-icon:hover {
+            transform: scale(1.1);
+        }
+        .elementor-social-icon-facebook {
+            background-color: #3b5998;
+        }
+        .elementor-social-icon-instagram {
+            background: radial-gradient(circle at 30% 107%, 
+                #fdf497 0%, #fdf497 5%, 
+                #fd5949 45%, #d6249f 60%, 
+                #285AEB 90%);
+        }
+        .elementor-social-icon-telegram {
+            background-color: #0088cc;
+        }
+        .elementor-social-icon-messenger {
+            background-color: #00B2FF;
+        }
+    </style>
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Moul&display=swap);
+            body {
+            font-family: 'KhmerOSMuolLight', sans-serif;
+            background-image: url(rachana.jpg);
+            background-size: cover;
+            text-align: center;
+            }
+            @font-face {
+            font-family: Moul;
+            font-style: "normal";
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+            unicode-range: u+1780-17ff,u+19e0-19ff,u+200c-200d,u+25cc
+            }
+            @font-face {
+                font-family: "Moul";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Moul Fallback;
+                src: local("Arial");
+                ascent-override:94.45%;descent-override:45.34%;line-gap-override:0.00%;size-adjust:129.24%}
+
+            .__className_79a552 {
+                font-family: Moul,Moul Fallback;
+                font-weight: 400;
+                font-style: normal
+            }
+
+            .__variable_79a552 {
+                --font-moul: "Moul","Moul Fallback"
+            }
+
+            @font-face {
+                font-family: "Battambang";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Battambang&display=swap) format("woff2");
+                unicode-range: u+1780-17ff,u+19e0-19ff,u+200c-200d,u+25cc
+            }
+
+            @font-face {
+                font-family: Battambang;
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Battambang&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+            .font-Dancing {
+                font-family: 'Dancing Script', cursive;
+            }
+
+            @font-face {
+                font-family: Battambang;
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Battambang&display=swap) format("woff2");
+                unicode-range: u+1780-17ff,u+19e0-19ff,u+200c-200d,u+25cc
+            }
+
+            @font-face {
+                font-family: Battambang;
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Battambang&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Battambang Fallback;
+                src: local("Arial");
+                ascent-override:111.34%;descent-override:53.44%;line-gap-override:0.00%;size-adjust:109.64%}
+
+            .__className_75db82 {
+                font-family: Battambang,Battambang Fallback;
+                font-style: normal
+            }
+
+            .__variable_75db82 {
+                --font-battambang: "Battambang","Battambang Fallback"
+            }
+
+            @font-face {
+                font-family: Tangerine;
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Tangerine;
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Tangerine Fallback;
+                src: local("Arial");
+                ascent-override:141.08%;descent-override:47.03%;line-gap-override:0.00%;size-adjust:53.16%}
+
+            .__className_a87901 {
+                font-family: Tangerine,Tangerine Fallback;
+                font-style: normal
+            }
+
+            .__variable_a87901 {
+                --font-tangerine: "Tangerine","Tangerine Fallback"
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(/https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff
+            }
+
+            @font-face {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.googleapis.com/css2?family=Moul&display=swap) format("woff2");
+                unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd
+            }
+
+            @font-face {
+                font-family: Poppins Fallback;
+                src: local("Arial");
+                ascent-override:93.62%;descent-override:31.21%;line-gap-override:8.92%;size-adjust:112.16%}
+
+            .__className_1fa6f9 {
+                font-family: Poppins,Poppins Fallback;
+                font-style: normal
+            }
+
+            .__variable_1fa6f9 {
+                --font-poppins: "Poppins","Poppins Fallback"
+            }
+
+            *,:after,:before {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59,130,246,.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style:
+            }
+
+            ::backdrop {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59,130,246,.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style:
+            }
+
+            /*
+            ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+            */
+            *,:after,:before {
+                box-sizing: border-box;
+                border: 0 solid #e5e7eb
+            }
+
+            :after,:before {
+                --tw-content: ""
+            }
+
+            :host,html {
+                line-height: 1.5;
+                -webkit-text-size-adjust: 100%;
+                -moz-tab-size: 4;
+                tab-size: 4;
+                font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+                font-feature-settings: normal;
+                font-variation-settings: normal;
+                -webkit-tap-highlight-color: transparent
+            }
+
+            body {
+                line-height: inherit
+            }
+
+            hr {
+                height: 0;
+                color: inherit;
+                border-top-width: 1px
+            }
+
+            abbr:where([title]) {
+                text-decoration: underline dotted
+            }
+
+            h1,h2,h3,h4,h5,h6 {
+                font-size: inherit;
+                font-weight: inherit
+            }
+
+            a {
+                color: inherit;
+                text-decoration: inherit
+            }
+
+            b,strong {
+                font-weight: bolder
+            }
+
+            code,kbd,pre,samp {
+                font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+                font-feature-settings: normal;
+                font-variation-settings: normal;
+                font-size: 1em
+            }
+
+            small {
+                font-size: 80%
+            }
+
+            sub,sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline
+            }
+
+            sub {
+                bottom: -.25em
+            }
+
+            sup {
+                top: -.5em
+            }
+
+            table {
+                text-indent: 0;
+                border-color: inherit;
+                border-collapse: collapse
+            }
+
+            button,input,optgroup,select,textarea {
+                font-family: inherit;
+                font-feature-settings: inherit;
+                font-variation-settings: inherit;
+                font-size: 100%;
+                font-weight: inherit;
+                line-height: inherit;
+                letter-spacing: inherit;
+                color: inherit;
+                margin: 0;
+                padding: 0
+            }
+
+            button,select {
+                text-transform: none
+            }
+
+            button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]) {
+                background-color: transparent;
+                background-image: none
+            }
+
+            :-moz-focusring {
+                outline: auto
+            }
+
+            :-moz-ui-invalid {
+                box-shadow: none
+            }
+
+            progress {
+                vertical-align: baseline
+            }
+
+            ::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+                height: auto
+            }
+
+            [type=search] {
+                outline-offset: -2px
+            }
+
+            ::-webkit-search-decoration {
+                -webkit-appearance: none
+            }
+
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit
+            }
+
+            summary {
+                display: list-item
+            }
+
+            blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
+                margin: 0
+            }
+
+            fieldset {
+                margin: 0
+            }
+
+            fieldset,legend {
+                padding: 0
+            }
+
+            menu,ol,ul {
+                list-style: none;
+                margin: 0;
+                padding: 0
+            }
+
+            dialog {
+                padding: 0
+            }
+
+            textarea {
+                resize: vertical
+            }
+
+            input::placeholder,textarea::placeholder {
+                opacity: 1;
+                color: #9ca3af
+            }
+
+            [role=button],button {
+                cursor: pointer
+            }
+
+            :disabled {
+                cursor: default
+            }
+
+            audio,canvas,embed,iframe,img,object,svg,video {
+                display: block;
+            }
+
+            img,video {
+                max-width: 100%;
+                height: auto
+            }
+
+            [hidden]:where(:not([hidden=until-found])) {
+                display: none
+            }
+
+            body {
+                background-color: #fff;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box
+            }
+
+            .container {
+                width: 100%
+            }
+
+            @media (min-width: 640px) {
+                .container {
+                    max-width:640px
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width:768px
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .container {
+                    max-width:1024px
+                }
+            }
+
+            @media (min-width: 1280px) {
+                .container {
+                    max-width:1280px
+                }
+            }
+
+            @media (min-width: 1536px) {
+                .container {
+                    max-width:1536px
+                }
+            }
+
+            .gold-text {
+                --tw-text-opacity: 1;
+                color: rgb(182 144 10/var(--tw-text-opacity,1))
+            }
+
+            .gold-bg {
+                --tw-bg-opacity: 1;
+                background-color: rgb(244 240 228/var(--tw-bg-opacity,1))
+            }
+
+            .gold-border {
+                --tw-border-opacity: 1!important;
+                border-color: rgb(182 144 10/var(--tw-border-opacity,1))!important
+            }
+
+            .absolute {
+                position: absolute
+            }
+
+            .relative {
+                position: relative
+            }
+
+            .inset-0 {
+                inset: 0
+            }
+
+            .left-1\/2 {
+                left: 50%
+            }
+
+            .top-10 {
+                top: 2.5rem
+            }
+
+            .top-36 {
+                top: 9rem
+            }
+
+            .z-10 {
+                z-index: 10
+            }
+
+            .mx-1 {
+                margin-left: .25rem;
+                margin-right: .25rem
+            }
+
+            .mx-auto {
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .my-3 {
+                margin-top: .75rem;
+                margin-bottom: .75rem
+            }
+
+            .mt-8 {
+                margin-top: 2rem
+            }
+
+            .flex {
+                display: flex
+            }
+
+            .aspect-\[3\.8\/1\] {
+                aspect-ratio: 3.8/1
+            }
+
+            .size-24 {
+                width: 6rem;
+                height: 6rem
+            }
+
+            .size-40 {
+                width: 10rem;
+                height: 10rem
+            }
+
+            .h-72 {
+                height: 18rem
+            }
+
+            .h-auto {
+                height: auto
+            }
+
+            .h-fit {
+                height: fit-content
+            }
+
+            .h-full {
+                height: 100%
+            }
+
+            .h-screen {
+                height: 100vh
+            }
+
+            .w-24 {
+                width: 6rem
+            }
+
+            .w-\[60\%\] {
+                width: 60%
+            }
+
+            .w-\[70\%\] {
+                width: 70%
+            }
+
+            .w-fit {
+                width: fit-content
+            }
+
+            .w-full {
+                width: 100%
+            }
+
+            .min-w-\[125px\] {
+                min-width: 125px
+            }
+
+            .max-w-\[180px\] {
+                max-width: 180px
+            }
+
+            .max-w-\[280px\] {
+                max-width: 280px
+            }
+
+            .max-w-xl {
+                max-width: 36rem
+            }
+
+            .-translate-x-1\/2 {
+                --tw-translate-x: -50%;
+                transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+            }
+
+            .flex-col {
+                flex-direction: column
+            }
+
+            .flex-wrap {
+                flex-wrap: wrap
+            }
+
+            .items-start {
+                align-items: flex-start
+            }
+
+            .items-center {
+                align-items: center
+            }
+
+            .justify-center {
+                justify-content: center
+            }
+
+            .justify-around {
+                justify-content: space-around
+            }
+
+            .gap-10 {
+                gap: 2.5rem
+            }
+
+            .gap-2 {
+                gap: .5rem
+            }
+
+            .gap-3 {
+                gap: .75rem
+            }
+
+            .gap-4 {
+                gap: 1rem
+            }
+
+            .gap-5 {
+                gap: 1.25rem
+            }
+
+            .text-nowrap {
+                text-wrap: nowrap
+            }
+
+            .rounded-2xl {
+                border-radius: 1rem
+            }
+
+            .rounded-lg {
+                border-radius: .5rem
+            }
+
+            .rounded-xl {
+                border-radius: .75rem
+            }
+
+            .border {
+                border-width: 1px
+            }
+
+            .border-y {
+                border-top-width: 1px
+            }
+
+            .border-b,.border-y {
+                border-bottom-width: 1px
+            }
+
+            .border-\[\#FFDC00\] {
+                --tw-border-opacity: 1;
+                border-color: rgb(255 220 0/var(--tw-border-opacity,1))
+            }
+
+            .bg-black\/30 {
+                background-color: rgba(0,0,0,.3)
+            }
+
+            .bg-cover {
+                background-size: cover
+            }
+
+            .bg-center {
+                background-position: 50%
+            }
+
+            .bg-no-repeat {
+                background-repeat: no-repeat
+            }
+
+            .object-cover {
+                object-fit: cover
+            }
+
+            .p-10 {
+                padding: 2.5rem
+            }
+
+            .p-5 {
+                padding: 1.25rem
+            }
+
+            .px-10 {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem
+            }
+
+            .px-2 {
+                padding-left: .5rem;
+                padding-right: .5rem
+            }
+
+            .px-3 {
+                padding-left: .75rem;
+                padding-right: .75rem
+            }
+
+            .px-5 {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem
+            }
+
+            .px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+
+            .py-1 {
+                padding-top: .25rem;
+                padding-bottom: .25rem
+            }
+
+            .py-10 {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem
+            }
+
+            .pb-5 {
+                padding-bottom: 1.25rem
+            }
+
+            .pt-5 {
+                padding-top: 1.25rem
+            }
+
+            .text-center {
+                text-align: center
+            }
+
+            .font-battambang {
+                font-family: var(--font-battambang),sans-serif
+            }
+            .font-moul {
+                font-family: var(--font-moul),sans-serif
+            }
+
+            .font-poppins {
+                font-family: var(--font-poppins)
+            }
+
+            .font-times {
+                font-family: Times New Roman,serif
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem
+            }
+
+            .text-lg {
+                font-size: 1.125rem;
+                line-height: 1.75rem
+            }
+
+            .text-sm {
+                font-size: .875rem;
+                line-height: 1.25rem
+            }
+
+            .text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem
+            }
+
+            .text-xs {
+                font-size: .75rem;
+                line-height: 1rem
+            }
+
+            .font-bold {
+                font-weight: 700
+            }
+
+            .font-medium {
+                font-weight: 500
+            }
+
+            .font-normal {
+                font-weight: 400
+            }
+
+            .uppercase {
+                text-transform: uppercase
+            }
+
+            .\!leading-loose {
+                line-height: 2!important
+            }
+
+            .leading-loose {
+                line-height: 2
+            }
+
+            .leading-relaxed {
+                line-height: 1.625
+            }
+
+            .tracking-wide {
+                letter-spacing: .025em
+            }
+
+            .text-\[\#FFDC00\] {
+                --tw-text-opacity: 1;
+                color: rgb(255 220 0/var(--tw-text-opacity,1))
+            }
+
+            .text-pink-500 {
+                --tw-text-opacity: 1;
+                color: rgb(236 72 153/var(--tw-text-opacity,1))
+            }
+
+            .antialiased {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale
+            }
+
+            .blur {
+                --tw-blur: blur(8px)
+            }
+
+            .blur,.filter {
+                filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+            }
+
+            .backdrop-blur-sm {
+                --tw-backdrop-blur: blur(4px);
+                -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+                backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+            }
+
+            @media (max-width: 400px) {
+                .xs\:top-32 {
+                    top:8rem
+                }
+
+                .xs\:size-20 {
+                    width: 5rem;
+                    height: 5rem
+                }
+
+                .xs\:h-fit {
+                    height: fit-content
+                }
+
+                .xs\:w-28 {
+                    width: 7rem
+                }
+
+                .xs\:py-5 {
+                    padding-top: 1.25rem;
+                    padding-bottom: 1.25rem
+                }
+
+                .xs\:text-sm {
+                    font-size: .875rem;
+                    line-height: 1.25rem
+                }
+
+                .xs\:text-xl {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem
+                }
+            }
+
+            .\[\&\>p\]\:font-tangerine>p {
+                font-family: var(--font-tangerine),cursive
+            }
+
+            .\[\&\>p\]\:text-4xl>p {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+
+            .\[\&\>p\]\:font-bold>p {
+                font-weight: 700
+            }
+            .antialiased {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .__variable_1fa6f9 {
+                --font-poppins: "Poppins", "Poppins Fallback";
+            }
+            .__variable_a87901 {
+                --font-tangerine: "Tangerine", "Tangerine Fallback";
+            }
+            .__variable_75db82 {
+                --font-battambang: "Battambang", "Battambang Fallback";
+            }
+            .__variable_79a552 {
+                --font-moul: "Moul", "Moul Fallback";
+            }
+
+        </style>
+    </head>
+    <body class="__variable_79a552 __variable_75db82 __variable_a87901 __variable_1fa6f9 --font-times-new-roman antialiased">
+        <div class="w-full">
+            <div class="container mx-auto max-w-xl">
+                <div class="relative w-full">
+                    <img alt="Top background" width="1608" height="3992" decoding="async" data-nimg="1" class="w-full h-auto" src="_next/background01.jpg" style="color: transparent;">
+                    <img alt="Butterfly" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" class="absolute top-10 left-1/2 -translate-x-1/2 size-40" src="_next/static/media/butterfly" style="color: transparent;">
+                    <div class="absolute top-36 xs:top-32 w-full flex flex-col justify-center items-center gap-4">
+                        <img alt="Logo" loading="lazy" width="160" height="164" decoding="async" data-nimg="1" class="w-24 xs:w-28" src="_next/logoimage.jpg" style="color: transparent;">
+                        <div class="gold-text text-lg xs:text-xl font-moul flex flex-col items-center gap-3">
+                            <p>សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
+                            <p>សូមគោរពអញ្ជើញ</p>
+                        </div>
+                        <div class="relative flex justify-center items-center w-[70%] max-w-[280px] aspect-[3.8/1] bg-center bg-cover bg-no-repeat px-2" style="background-image: url(&quot;_next/static/media/nameframe.svg&quot;);">
+                            <p class="text-center gold-text tracking-wide px-3 font-moul" style="font-size: clamp(9px, 3.2vw, 13px); max-width: 80%; line-height: 1.6; letter-spacing: 0.2px;">កញ្ញា ជ្រាង ស្រីនាង</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-fit w-full gold-bg flex flex-col gap-5 px-6 pb-5">
+                    <div class="flex items-center justify-around gold-text font-moul my-3">
+                        <div class="flex flex-col gap-3 text-sm">
+                            <p>លោក យិន &ZeroWidthSpace;លុច</p>
+                            <p>លោកស្រី ម៉ើ​ ស៊ីវយ៉េង</p>
+                        </div>
+                        <div class="flex flex-col gap-3 text-sm">
+                            <p>លោក វង ជ្រាង</p>
+                            <p>លោកស្រី ហេង ស្រីពៅ</p>
+                        </div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 gold-text">
+                    <p class="text-sm font-moul">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+                    <p class="text-xs text-center leading-loose font-battambang">
+                        សម្ដេច ទ្រង់ ឯកឧត្ដម លោកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្ដីជ័យមង្គលក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ</p>
+                </div>
+                <div class="flex items-center justify-around gold-text">
+                    <div class="flex flex-col items-center gap-3">
+                        <p class="text-xs font-battambang">កូនប្រុសនាម</p>
+                        <p class="text-sm font-moul">យិន&ZeroWidthSpace; រចនា</p>
+                    </div>
+                        <img alt="Statue Image" loading="lazy" width="1228" height="1244" decoding="async" data-nimg="1" class="size-24 xs:size-20" style="color:transparent"  src="_next/logoimage.jpg">
+                        <div class="flex flex-col items-center gap-3">
+                            <p class="text-xs font-battambang">កូនស្រីនាម</p>
+                            <p class="text-sm font-moul">ជ្រាង ស្រីនាង</p>
+                        </div>
+                    </div>
+                    <p class="gold-text text-center text-xs font-battambang leading-loose">
+                            ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃព្រហស្បតិ៍ ៦&ZeroWidthSpace;​​កើត ខែបុស្ស ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ទី ២៥ ខែ ធ្នូ ឆ្នាំ ២០២៥ វេលាម៉ោង ៥ ល្ងាច ស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិព្រែកតាកេរ ឃុំកោះធំ "ខ" ស្រុកកោះធំ ខេត្តកណ្ដាល ដោយមេត្រីភាព ។ សូមអគុណ !
+                    </p>
+                    <div class="w-full flex flex-col items-center gap-5 gold-text">
+                        <img alt="Divider Image" loading="lazy" width="262" height="2" decoding="async" data-nimg="1" style="color:transparent" src="_next/static/media/divider.svg">
+                        <p class="text-xs uppercase font-times font-normal">together with our families</p>
+                    
+                        <div class="w-full gold-text font-Dancing">
+                            <div class="w-full items-center justify-center gap-5">
+                                <p>Rachana YIN</p>
+                                <p>&amp;</p>
+                                <p>Sreyneang CHREANG</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-center leading-loose uppercase font-times font-normal">
+                            Invites you to the ceremony and celebration of their marriage
+                        </p>
+                        <div class="w-full flex items-center justify-center gap-3 gold-text text-xs uppercase font-times">
+                            <div class="border-y gold-border px-3 py-1">Thursday</div>
+                                <div class="flex flex-col items-center">
+                                        <p>December</p>
+                                        <p class="text-2xl font-bold">25</p>
+                                        <p>2025</p>
+                                    </div>
+                                    <div class="border-y gold-border px-3 py-1">5:00 PM</div>
+                                </div>
+                                <p class="text-xs text-center leading-loose uppercase font-times font-normal">
+                                    At the bride’s house, Preaek Ta Ker Village Koh thom "B" Commune Koh thom District Kandal Province, thanks!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative h-fit flex flex-col items-center justify-center gap-10 p-10 gold-bg py-10 px-5">
+                            <div class="absolute inset-0 bg-center bg-cover bg-no-repeat" style="background-image:url(_next/photo_1.jpg);background-position:55% 50%;filter:blur(2px)"></div>
+                            <div class="relative h-full flex justify-center items-center text-[#FFDC00] font-moul px-5">
+                                <div class="flex flex-col items-center gap-10">
+                                    <p class="text-xl">កម្មវិធីសិរីសួស្ដីអាពាហ៍ពិពាហ៍</p>
+                                    <div class="h-fit w-fit p-5 rounded-2xl border border-[#FFDC00] bg-black/30 backdrop-blur-sm">
+                                        <div class="flex flex-col items-center justify-center gap-5 pb-5 border-b border-[#FFDC00]">
+                                            <div class="flex flex-col items-center gap-3 text-sm">
+                                                <p>កម្មវិធីថ្ងៃទី១</p>
+                                                <p>ថ្ងៃពុធ ទី២៤ ខែធ្នូ ឆ្នាំ២០២៥</p>
+                                            </div>
+                                            <ul class="w-full flex flex-col items-start gap-2">
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៣:០០ រសៀល</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីសែនក្រុងពាលី</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៤:០០ រសៀល</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៦:០០ រសៀល</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលល្ងាច</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៦:៣០ រសៀល</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីជាវខាន់ស្លា</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="w-full flex flex-col items-center justify-center gap-5 pt-5">
+                                            <div class="flex flex-col items-center gap-3 text-sm">
+                                                <p>កម្មវិធីថ្ងៃទី២</p>
+                                                <p>ថ្ងៃព្រហស្បតិ៍ ទី ២៥ ខែ ធ្នូ ឆ្នាំ ២០២៥</p>
+                                            </div>
+                                            <ul class="flex flex-col items-start gap-2">
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៦:៣០ ព្រឹក</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ជួបជុំភ្ញៀវកិត្តិយសរៀបចំហែជំនូន</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៧:០០ ព្រឹក</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីហែជំនូន(កំណត់)</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៨:០០ ព្រឹក</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីចៅមហានិយាយជើងការ</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៨:៣០ ព្រឹក</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីបំពាក់ចិញ្ចៀន</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៩:០០ ព្រឹក</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីកាត់សក់បង្កក់សិរី</p>
+                                                </li>
+                                                <li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ១០:៣០ ថ្ងៃត្រង់</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ពិធីបង្វិលពពិល សំពះផ្ទឹម សែនចងដៃ ព្រះថោងនាងនាគ</p>
+                                                </li><li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ១២:០០ ថ្ងៃត្រង់</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់</p>
+                                                </li><li class="text-md font-battambang flex items-start">
+                                                    <p class="text-nowrap min-w-[125px]">ម៉ោង ០៥:០០ ល្ងាច</p>
+                                                    <p class="mx-1">:</p>
+                                                    <p>ទទួលបដិសណ្ឋារកិច្ច និងអញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative h-fit flex flex-col items-center justify-center gap-10 p-10">
+                            <div class="absolute inset-0 bg-center bg-cover bg-no-repeat " style="background-image:url(_next/photo_2.jpg);background-position:55% 50%;filter:blur(2px)"></div>
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="p-5 text-[#FFDC00] font-medium rounded-lg border border-[#FFDC00] flex flex-col items-center gap-3 z-10">
+                                <p class="font-moul text-lg">លិខិតសូមអភ័យទោស</p>
+                                <div class="font-battambang !leading-loose xs:text-sm">
+                                    <p>យើងខ្ញុំសូមអភ័យទោសដោយពុំបានជួបអញ្ជើញដោយផ្ទាល់ និង ការសរសេរឈ្មោះរបស់ភ្ញៀវកិត្តិយស មិនបានត្រឹមត្រូវ ឬ ពុំបានសរសេរឈ្មោះ។</p>
+                                    <p>វត្តមាន សម្ដេច ទ្រង់ ឯកឧត្ដម លោកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តទាំងអស់ គឺជាកិត្តិយសដ៏ឧត្តុង្គឧត្តម សម្រាប់ក្រុមគ្រួសាររបស់យើងខ្ញុំ។</p>
+                                </div>
+                            </div>
+                            <div class="p-5 text-[#FFDC00] font-medium rounded-lg border border-[#FFDC00] flex flex-col items-center gap-3 z-10">
+                                <p class="font-moul text-lg">លិខិតសូមថ្លែងអំណរគុណ</p>
+                                <div class="font-battambang !leading-loose xs:text-sm">
+                                    <p>យើងខ្ញុំសូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះការអញ្ជើញចូលរួមជា ភ្ញៀវកិត្តិយស ដ៏ឧត្តុង្គឧត្តមក្នុងកម្មវិធី របស់យើងខ្ញុំ។</p>
+                                    <p>សូមជូនពរ សម្ដេច ទ្រង់ ឯកឧត្ដម លោកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងភ្ញៀវកិត្តិយសទាំងអស់មានសុខភាពល្អនិងទទួលជោគជ័យគ្រប់ភារៈកិច្ច។ សូមអរគុណ!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative h-fit flex flex-col items-center justify-center gap-10 p-10">
+                            <div class="absolute inset-0 bg-center bg-cover bg-no-repeat " style="background-image:url(_next/photo_3.jpg);background-position:55% 50%;filter:blur(2px)"></div>
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="p-5 text-[#FFDC00] font-medium rounded-lg border border-[#FFDC00] flex flex-col items-center gap-3 z-10">
+                                <p class="font-moul text-lg">ទំនាក់ទំនងម្ចាស់កម្មវិធីកូនប្រុស</p>
+                                <div class="space-y-4">
+                                    <!-- Telegram -->
+                                    <a href="https://t.me/NPSRachana" class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                                        <div class="w-9 h-9 rounded-full bg-pink-50 flex items-center justify-center elementor-icon elementor-icon elementor-social-icon elementor-social-icon-telegram">
+                                            <span class="elementor-screen-only"></span>
+                                            <i class="fab fa-telegram-plane"></i>
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-base font-medium text-gray-900 m-0">+855 15 888 324</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://t.me/Rachana_YIN" class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                                        <div class="w-9 h-9 rounded-full bg-pink-50 flex items-center justify-center elementor-icon elementor-icon elementor-social-icon elementor-social-icon-telegram">
+                                            <span class="elementor-screen-only"></span>
+                                            <i class="fab fa-telegram-plane"></i>
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-base font-medium text-gray-900 m-0">+855 96 68 28 121</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-5 text-[#FFDC00] font-medium rounded-lg border border-[#FFDC00] flex flex-col items-center gap-3 z-10">
+                                <p class="font-moul text-lg">ទំនាក់ទំនងម្ចាស់កម្មវិធីកូនស្រី</p>
+                                <div class="space-y-4">
+                                    <!-- Telegram -->
+                                    <a href="https://t.me/Ranza099" class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                                        <div class="w-9 h-9 rounded-full bg-pink-50 flex items-center justify-center elementor-icon elementor-icon elementor-social-icon elementor-social-icon-telegram">
+                                                <span class="elementor-screen-only"></span>
+                                                <i class="fab fa-telegram-plane"></i>
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-base font-medium text-gray-900 m-0">+855 81 681 321</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="bg-center bg-no-repeat flex flex-col items-center justify-center gap-10 p-10" style="background-image:url(_next/photo_111.jpg);background-position:55% 50%;filter:blur">
+                                <div class="photo-gallery">
+                                    <div class="flex flex-col items-center gap-5 px-10 text-center">
+                                        <p class="text-pink-500 font-moul text-2xl leading-relaxed xs:text-xl">ប្លង់បង្ហាញទីតាំងកម្មវិធី</p>
+                                        <img src="_next/static/media/qrcode_www.google.com.kh.png" alt="Memory photo 1" class="memory-photo">
+                                        <a href="https://maps.app.goo.gl/xAVi6XgtAFjn5Km97" class="map-link font-battambang leading-relaxed text-md text-center">ទីតាំងក្នុង Google Map</a>
+                                        <img src="_next/static/media/aba.jpg" alt="Memory photo 2" class="memory-photo">
+                                        <a href="https://pay.ababank.com/RzcEZxaHP6zAtide8" class="map-link map-link font-battambang leading-relaxed text-md text-center">Link to send payment</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative h-fit flex flex-col items-center justify-center gap-10 p-10 gold-bg py-10 px-5">
+                                <div class="flex flex-col items-center gap-5 px-10 text-center">
+                                    <p class="text-pink-500 font-moul text-2xl leading-relaxed xs:text-xl">កម្រងរូបភាពអនុស្សាវរីយ៍</p>
+                                    <p class="gold-text font-battambang text-md leading-relaxed">រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
+                                </div>
+                                <div class="photo-gallery">
+                                    <img src="_next/photo_1.jpg" alt="Memory photo 1" class="memory-photo">
+                                    <img src="_next/photo_2.jpg" alt="Memory photo 1" class="memory-photo">
+                                    <img src="_next/photo_3.jpg" alt="Memory photo 1" class="memory-photo">
+                                    <img src="_next/photo_4.jpg" alt="Memory photo 1" class="memory-photo">
+                                    <img src="_next/photo_5.jpg" alt="Memory photo 1" class="memory-photo">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
